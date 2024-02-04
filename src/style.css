@@ -1,5 +1,7 @@
 html {
-  --section-background-color: linear-gradient(
+
+  /*
+   --section-background-color: linear-gradient(
     to bottom left,
     rgba(17, 16, 16, 0.582),
     rgba(12, 8, 24, 0.904)
@@ -10,6 +12,7 @@ html {
     rgba(17, 16, 16, 0.678),
     rgba(12, 10, 22, 0.863)
   );
+  */
 
   --imp-text-color: #6EC6FF;
 }
@@ -321,6 +324,7 @@ button:focus {
   position: relative;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
+  background-image: var(--image-gradient), url(./Assets/blue_bg.png);
 }
 
 .home-about-description {
@@ -402,7 +406,7 @@ button:focus {
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  background-color: #6ec5ff0f;
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
