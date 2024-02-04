@@ -37,7 +37,7 @@ function Home() {
   className="img-fluid"
   style={{
     maxHeight: "350px",
-    marginLeft: "70px", // Adjust the value to move it to the right
+    marginLeft: "20px", // Adjust the value to move it to the right
     // borderRadius: "10px", // Adjust the value to control the border radius
     // boxShadow: "0px 0px 20px rgba(0, 0, 0, 0.3)", // Add a box shadow for depth
   }}
