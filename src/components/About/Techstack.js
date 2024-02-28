@@ -8,6 +8,8 @@ import {
   DiGit,
   DiJava,
   DiSqllite,
+  DiVim
+  
 } from "react-icons/di";
 import {
   SiFirebase,
@@ -17,7 +19,8 @@ import {
   SiAndroidstudio,
   SiTryhackme,
   SiSplunk,
-  SiKalilinux
+  SiKalilinux,
+  SiGooglecloud
 } from "react-icons/si";
 
 // Import the CSS file to define styles
@@ -35,6 +38,8 @@ const iconsData = [
   { icon: <SiAndroidstudio />, name: "Python" },
   { icon: <SiTryhackme />, name: "Tryhackme" },
   { icon: <SiSplunk />, name: "Splunk" },
+  { icon: <SiGooglecloud />, name: "Google Cloud" },
+  { icon: <DiVim />, name: "Vim" },
   // Add more entries for other icons
 ];
 
@@ -61,7 +66,8 @@ function Techstack() {
           onMouseLeave={handleIconLeave}
         >
           {iconInfo.icon}
-          {hoveredIcon === iconInfo.name && <span className="icon-name">{iconInfo.name}</span>}
+          {/* {hoveredIcon === iconInfo.name && <span className="icon-name">{iconInfo.name}</span>} */}
+          <h6>{iconInfo.name}</h6>
         </Col>
       ))}
     </Row>

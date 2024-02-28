@@ -6,13 +6,9 @@ import {
   SiPostman,
   SiSlack,
   SiVercel,
-  SiWireshark
+  SiWireshark,
+  SiBitdefender,
 } from "react-icons/si";
-
-
-
-
-
 
 
 const iconsData = [
@@ -20,7 +16,8 @@ const iconsData = [
   { icon: <SiPostman />, name: "Postmane" },
   { icon: <SiSlack />, name: "Slack" },
   { icon: <SiVercel />, name: "Vercel" },
-  { icon: <SiWireshark />, name: "Wireshark" }
+  { icon: <SiWireshark />, name: "Wireshark" },
+  { icon: <SiBitdefender />, name: "Bitdefender" },
 ];
 
 
@@ -48,7 +45,8 @@ function Toolstack() {
           onMouseLeave={handleIconLeave}
         >
           {iconInfo.icon}
-          {hoveredIcon === iconInfo.name && <span className="icon-name">{iconInfo.name}</span>}
+          {/* {hoveredIcon === iconInfo.name && <span className="icon-name">{iconInfo.name}</span>} */}
+          <h6>{iconInfo.name}</h6>
         </Col>
       ))}
     </Row>

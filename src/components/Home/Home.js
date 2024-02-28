@@ -1,6 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/blue.png";
+// import homeLogo from "../../Assets/blue.png";
+// import { InlineSvg } from "react-svg-inline";
+import LottieAnimation from "../Lottie"; // Assuming you have a file named Lottie.js
+// import lottiemap from "../Lottie";
+import homesvg from "../../Assets/lottie1.json";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
@@ -31,19 +35,8 @@ function Home() {
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
-            <img
-  src={homeLogo}
-  alt="home pic"
-  className="img-fluid"
-  style={{
-    maxHeight: "350px",
-    marginLeft: "20px", // Adjust the value to move it to the right
-    // borderRadius: "10px", // Adjust the value to control the border radius
-    // boxShadow: "0px 0px 20px rgba(0, 0, 0, 0.3)", // Add a box shadow for depth
-  }}
-/>
-
-
+              {/* Use the LottieAnimation component */}
+              <LottieAnimation lottie={homesvg} />
             </Col>
           </Row>
         </Container>

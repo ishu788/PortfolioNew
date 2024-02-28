@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Particle from "../Particle";
-import pdf from "../../Assets/Resume_Ishwinder_Final.pdf";
+import pdf1 from "../../Assets/IshwinderSinghResume.pdf";
 
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -45,7 +45,7 @@ function ResumeNew() {
         <Particle />
         <Row style={{ overflowY: 'auto', maxHeight: '100vh' }}>
           <Document
-            file={pdf}
+            file={pdf1}
             className="d-flex flex-column align-items-center"
             onLoadSuccess={onDocumentLoadSuccess}
           >
